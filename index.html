@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <section class="container">
+    <aside class="block">
+      <ul class="categories">
+        <li>Футболки</li>
+        <li>Худі</li>
+        <li>Джинси</li>
+        <li>Кросівки</li>
+        <li>Головні убори</li>
+      </ul>
+    </aside>
+    <main class="block">
+      <div class="products">
+      </div>
+    </main>
+    <aside class="block">
+      <div class="cart">
+      </div>
+    </aside>
+  </section>
+
+  <dialog>
+    <form>
+      <div class="input">
+        <label for="name">ПІБ:<span class="red">*</span></label>
+        <input placeholder="прізвище ім'я по-батькові" type="text" name="name" id="name">
+        <p class="error-message"></p>
+      </div>
+      <div class="input">
+        <label for="city">Оберіть місто:<span class="red">*</span></label>
+        <select name="city" id="city">
+          <option value="">---</option>
+          <option value="київ">Київ</option>
+          <option value="львів">Львів</option>
+          <option value="харків">Харків</option>
+          <option value="одеса">Одеса</option>
+        </select>
+        <p class="error-message"></p>
+      </div>
+      <div class="input">
+        <label for="department">Відділення НП:<span class="red">*</span></label>
+        <input placeholder="введіть номер відділення" type="text" name="department" id="department">
+        <p class="error-message"></p>
+      </div>
+      <div class="input">
+        <label for="payment" class="label-title">Спосіб оплати:<span class="red">*</span></label>
+        <div class="radio-wrapper">
+          <div class="input-radio">
+            <input type="radio" id="postpaid" name="payment" value="післяплата">
+            <label for="postpaid">Післяплата</label>
+          </div>
+
+          <div class="input-radio">
+            <input type="radio" id="card" name="payment" value="карткою visa/mastercard">
+            <label for="card">Карткою visa/mastercard</label>
+          </div>
+        </div>
+        <p class="error-message"></p>
+      </div>
+      <div class="input">
+        <label for="quantity">Кількість одиниць:</label>
+        <input type="number" value="1" min="1" max="99" name="quantity" id="quantity">
+        <p class="error-message"></p>
+      </div>
+      <div class="input">
+        <label for="comment">Коментар до замовлення:</label>
+        <textarea placeholder="ваш коментар" type="text" name="comment" id="comment"></textarea>
+      </div>
+      <div class="input">
+        <input type="submit" class="submit" value="Купити">
+      </div>
+    </form>
+  </dialog>
+</body>
+
+</html>
